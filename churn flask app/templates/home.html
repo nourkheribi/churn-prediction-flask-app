@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Churn Prediction</title>
+</head>
+<body bgcolor="white">
+    <center>
+        <h1>Churn Prediction</h1>
+        <form action="/predict" method="post">
+            <table>
+                <tr>
+                    <td><label for="creditscore">Credit Score:</label></td>
+                    <td><input type="number" id="creditscore" name="creditscore" required></td>
+                </tr>
+
+                <tr><td colspan="2"><br></td></tr>
+
+                <tr>
+                    <td><label for="geography">Geography:</label></td>
+                    <td>
+                        <select id="geography" name="geography" required>
+                            <option value="">-- Select a country --</option>
+                            <option value="france">France</option>
+                            <option value="germany">Germany</option>
+                            <option value="spain">Spain</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr><td colspan="2"><br></td></tr>
+
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+
+                <tr><td colspan="2"><br></td></tr>
+
+                <tr>
+                    <td><label for="age">Age:</label></td>
+                    <td><input type="number" id="age" name="age" min="18" max="100" required></td>
+                </tr>
+                
+                <tr><td colspan="2"><br></td></tr>
+
+                <tr>
+                    <td><label for="tenure">Tenure:</label></td>
+                    <td><input type="number" id="tenure" name="tenure" min="0" max="10" required></td>
+                </tr>
+
+                <tr><td colspan="2"><br></td></tr>
+
+                <tr>
+                    <td><label for="Balance">Balance:</label></td>
+                    <td><input type="number" id="balance" name="balance" required></td>
+                </tr>
+
+                <tr><td colspan="2"><br></td></tr>
+
+                <tr>
+                    <td><label for="numofproducts">Num of products:</label></td>
+                    <td><input type="number" id="numofproducts" name="numofproducts" required></td>
+                </tr>
+
+                <tr><td colspan="2"><br></td></tr>
+
+                <tr>
+                    <td>Has card:</td>
+                    <td>
+                        <input type="radio" id="yes" name="Card" value="yes">
+                        <label for="yes">Yes</label>
+
+                        <input type="radio" id="no" name="Card" value="no">
+                        <label for="no">No</label>
+                    </td>
+                </tr>
+
+                <tr><td colspan="2"><br></td></tr>
+
+                <tr>
+                    <td>Active member:</td>
+                    <td>
+                        <input type="radio" id="yes" name="Active member" value="yes">
+                        <label for="yes">Yes</label>
+
+                        <input type="radio" id="no" name="Active member" value="no">
+                        <label for="no">No</label>
+                    </td>
+                </tr>
+
+                <tr><td colspan="2"><br></td></tr>
+
+                <tr>
+                    <td><label for="estimatedsalary">Estimated Salary:</label></td>
+                    <td><input type="number" id="estimatedsalary" name="estimatedsalary" required></td>
+                </tr>
+
+                <tr><td colspan="2" align="center"><br>
+                    <button type="submit">Submit</button></td></tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>
